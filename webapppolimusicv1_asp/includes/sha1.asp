@@ -114,7 +114,7 @@ Function Hex32(ByVal v)
     d = U32Val(v)
     s = ""
     For i = 1 To 8
-        r = Int(d) Mod 16
+        r = CInt(d - Int(d / 16) * 16)
         s = Mid(hx, r + 1, 1) & s
         d = Int(d / 16)
     Next

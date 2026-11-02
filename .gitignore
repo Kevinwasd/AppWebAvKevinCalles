@@ -1,0 +1,98 @@
+# =====================================================================
+#  PoliMusic - archivos excluidos del control de versiones
+#  Proyecto: ASP Clásico (VBScript) + SQL Server + IIS
+# =====================================================================
+
+# ---------------------------------------------------------------------
+#  Sistema operativo / Explorador de Windows
+# ---------------------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+.DS_Store
+
+# ---------------------------------------------------------------------
+#  Editores e IDE
+# ---------------------------------------------------------------------
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+*.swo
+*.autosave
+
+# ---------------------------------------------------------------------
+#  Temporales y respaldos de edición
+# ---------------------------------------------------------------------
+_tmp_*
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*~
+~$*
+*.log
+
+# ---------------------------------------------------------------------
+#  Paquete de despliegue
+#  Se regenera con deploy_iis.ps1 (robocopy) o Compress-Archive.
+# ---------------------------------------------------------------------
+PoliMusic_IIS.zip
+/dist/
+
+# ---------------------------------------------------------------------
+#  Respaldos y archivos de datos de SQL Server
+# ---------------------------------------------------------------------
+*.mdf
+*.ldf
+*.ndf
+*.trc
+
+# ---------------------------------------------------------------------
+#  Estado local de herramientas
+# ---------------------------------------------------------------------
+.workbuddy-ai/
+.playwright-cli/
+node_modules/
+
+# ---------------------------------------------------------------------
+#  Credenciales locales
+#  config.local.asp guarda servidor, usuario y contraseña de SQL Server.
+#  Se crea copiando config.example.asp, que sí se versiona.
+# ---------------------------------------------------------------------
+config.local.asp
+
+# ---------------------------------------------------------------------
+#  Material original entregado para el proyecto
+#  Es un duplicado exacto (mismos MD5) de los recursos que ya están en
+#  PoliMusic/songFiles, PoliMusic/userImages y PoliMusic/playlistImages.
+#  Se conserva en disco como respaldo, pero no se versiona para no subir
+#  ~9 MB de binarios repetidos.
+# ---------------------------------------------------------------------
+SongFilesAndImages_resources/
+
+# ---------------------------------------------------------------------
+#  Recursos que SÍ deben versionarse (no se ignoran):
+#    PoliMusic/songFiles/        audios del catálogo
+#    PoliMusic/albumImages/      portadas de álbumes
+#    PoliMusic/artistImages/     imágenes de artistas
+#    PoliMusic/playlistImages/   portadas de playlists
+#    PoliMusic/userImages/       fotos de perfil
+#    PoliMusic/assets/fonts/     tipografías locales
+#    capturas/                   evidencias de la interfaz
+#    BDD_PoliMusic.sql           script de la base de datos
+# ---------------------------------------------------------------------
+bin
+obj
+.csproj.user
+*.user
+.vs
+/packages
+/webapppolimusicv1_asp
